@@ -1,0 +1,33 @@
+JEE
+framework (bootstrap)
+git
+
+interopérabilité
+
+skeleton / stuff
+serveur / client
+
+rest full
+
+
+Versioning :
+	Centralisé : SVL/CVS
+	Distribué : chaque utilisateur a une version, pas besoin de connexion internet permanente
+
+
+
+git init 				//Initialise git dans le répertoire
+git add [fichier à ajouter]		//Ajoute le fichier (à faire après chaque modification)
+git add . 				//Ajoute tout le contenu du répertoire courant
+git commit -m "Message"			//Envoie le contenu précédemment ajouté vers la version principale
+git log					//Affiche les modifications aux versions effectuées chronologiquement
+	(q pour quitter si la liste est longue)
+git branch [nom de branche]		//Crée une nouvelle branche
+git checkout [branch]			//Importe le contenu d'une branche
+	( M s'affiche à côté des fichiers qui ont des soucis de merge, souvent quand les fichiers ont été modifiés 	localement ;
+	 -f pour forcer la mise à jour de tous les fichiers)
+git revert [hache code de la version]	//Retourne le fichier à l'ancienne version spécifiée
+git clone [URL]				//Importe le contenu du répertoire à l'adresse indiquée
+
+
+certutil -hashfile [fichier] SHA256 	//Retourne le code hash du fichier, qui apparait aussi dans git log
